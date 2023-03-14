@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.vscode/
+
+# ignore reference_sources
+reference_sources
