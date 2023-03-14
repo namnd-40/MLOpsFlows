@@ -1,13 +1,11 @@
-"""The setup module
-"""
+"""The setup module"""
 from pathlib import Path
 
 from setuptools import find_namespace_packages, setup
 
-BASE_DIR = Path(__file__).parent
-
 # Load packages from requirements.txt
-with open(Path(BASE_DIR, "requirements.txt"), encoding='UTF-8') as file:
+BASE_DIR = Path(__file__).parent
+with open(Path(BASE_DIR, "requirements.txt"), encoding="UTF-8") as file:
     required_packages = [ln.strip() for ln in file.readlines()]
 
 test_packages = [
@@ -17,40 +15,33 @@ test_packages = [
     "pytest-html-reporter==0.2.9",
 ]
 
-dev_packages = [
+style_packages = [
     "black==20.8b1",
     "flake8==3.8.3",
     "isort==5.5.3",
-    "jupyterlab==2.2.8",
-    "pre-commit==2.11.1",
+    "pre-commit==2.19.0",
 ]
 
 docs_packages = [
-    "mkdocs=1.3.0",
-    "mkdocs-material=8.2.15",
+    "mkdocs==1.1.2",
     "mkdocs-macros-plugin==0.5.0",
+    "mkdocs-material==6.2.4",
     "mkdocstrings==0.14.0",
 ]
-
+# Define our package
 setup(
     name="MLOpsFlows",
-    version="0.1",
-    license="None",
-    description="Implementation of MLOps Flows",
+    version=0.1,
+    description="MLOpsFlows projects.",
     author="500ae",
-    author_email="500ae",
-    url="https://github.com/namnd00/MLOpsFlows",
-    keywords=[
-        "machine-learning",
-        "artificial-intelligence",
-        "mlops",
-    ],
-    python_requires=">=3.8.10",
+    author_email="500ae@gmail.com",
+    url="https://mlopsflows.com/",
+    python_requires=">=3.8",
     packages=find_namespace_packages(),
     install_requires=[required_packages],
     extras_require={
-        "test": test_packages,
-        "dev": dev_packages,
+        "dev": docs_packages + style_packages + test_packages,
         "docs": docs_packages,
+        "test": test_packages,
     },
 )
