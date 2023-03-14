@@ -1,0 +1,29 @@
+# mkdocs.yml
+site_name: MLOpsFlows
+site_url: http://mlopsflow.com
+repo_url: https://github.com/namnd00/MLOpsFlows
+
+# Configuration
+theme:
+  name: material
+
+# Extensions
+# markdown_extensions:
+#   - admonition # alerts
+#   - codehilite
+#   - pymdownx.highlight
+
+# Plugins
+plugins:
+  - search:
+      lang: en
+  - mkdocstrings
+
+watch:
+  - .  # reload docs for any file changes
+
+# Page tree
+nav:
+  - Home: index.md
+  - Source:
+    - utils: src/utils.md
