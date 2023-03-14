@@ -3,9 +3,12 @@
 import json
 import random
 from typing import Dict
+import sys
+import os
 
 import numpy as np # pylint: disable=import-error
 
+sys.path.append(os.path.dirname(__file__))
 
 def load_dict(filepath: str) -> Dict:
     """Load a dictionary from a JSON's filepath.

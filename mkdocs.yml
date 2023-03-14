@@ -26,4 +26,4 @@ watch:
 nav:
   - Home: index.md
   - Source:
-    - utils: src/utils.md
+    - utils: mlopsflows/utils.md

@@ -32,7 +32,7 @@ docs_packages = [
 ]
 # Define our package
 setup(
-    name="MLOpsFlows",
+    name="mlopsflows",
     version=0.1,
     description="MLOpsFlows projects.",
     author="500ae",
