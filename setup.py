@@ -50,12 +50,7 @@ setup(
     install_requires=[required_packages],
     extras_require={
         "test": test_packages,
-        "dev": test_packages + dev_packages + docs_packages,
+        "dev": dev_packages,
         "docs": docs_packages,
     },
-    # entry_points={
-    #     "console_scripts": [
-    #         "mlops_with_ml = mlops_with_ml.main:app",
-    #     ],
-    # },
 )
