@@ -4,7 +4,7 @@ from pathlib import Path
 
 import numpy as np # pylint: disable=import-error
 
-from mlopsflows import utils
+from mlopsflows import utils # pylint: disable=import-error
 
 
 def test_save_and_load_dict():
@@ -27,5 +27,5 @@ def test_set_seed():
     utils.set_seeds()
     third_number = np.random.randn(2, 3)
     fourth_number = np.random.randn(2, 3)
-    assert np.array_equal(first_number, second_number)
-    assert np.array_equal(third_number, fourth_number)
+    assert np.array_equal(first_number, third_number)
+    assert np.array_equal(second_number, fourth_number)
