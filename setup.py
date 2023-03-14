@@ -9,23 +9,26 @@ with open(Path(BASE_DIR, "requirements.txt"), encoding="UTF-8") as file:
     required_packages = [ln.strip() for ln in file.readlines()]
 
 test_packages = [
-    "pytest==6.0.2",
-    "pytest-cov==2.10.1",
+    "pytest==7.1.2",
+    "pytest-cov==4.0.0",
     "pytest-html-reporter==0.2.9",
 ]
 
 style_packages = [
-    "black==20.8b1",
-    "flake8==3.8.3",
-    "isort==5.5.3",
+    "black==22.6.0",
+    "flake8==4.0.1",
+    "isort==5.9.3",
     "pre-commit==2.19.0",
 ]
 
 docs_packages = [
-    "mkdocs==1.3.0",
-    "mkdocs-material==8.2.15",
-    "mkdocs-macros-plugin==0.5.0",
-    "mkdocstrings==0.14.0",
+    "mkdocs==1.4.2",
+    "mkdocs-autorefs==0.4.1",
+    "mkdocs-macros-plugin==0.7.0",
+    "mkdocs-material==9.1.2",
+    "mkdocs-material-extensions==1.1.1",
+    "mkdocstrings==0.20.0",
+    "mkdocstrings-python==0.8.3",
 ]
 # Define our package
 setup(
