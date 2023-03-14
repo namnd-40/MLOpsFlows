@@ -1,9 +1,0 @@
-version: "3.8"
-services:
-  test:
-    environment:
-      - PYTHONPATH=./src
-    image: "namndd3/mlopsflow:test"
-    volumes:
-      - .:/app
-    command: python3 -m pytest
