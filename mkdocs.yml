@@ -8,10 +8,10 @@ theme:
   name: material
 
 # Extensions
-# markdown_extensions:
-#   - admonition # alerts
-#   - codehilite
-#   - pymdownx.highlight
+markdown_extensions:
+  - admonition # alerts
+  - codehilite
+  - pymdownx.highlight
 
 # Plugins
 plugins:

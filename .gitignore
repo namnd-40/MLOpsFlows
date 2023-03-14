@@ -131,3 +131,7 @@ dmypy.json
 
 # ignore reference_sources
 reference_sources
+
+# report to pytest coverage
+output.json
+*.html

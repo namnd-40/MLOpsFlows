@@ -22,10 +22,9 @@ style_packages = [
 ]
 
 docs_packages = [
-    "mkdocs==1.1.2",
-    "mkdocs-macros-plugin==0.5.0",
-    "mkdocs-material==6.2.4",
-    "mkdocstrings==0.14.0",
+    "mkdocs==1.3.0",
+    "mkdocs-material==8.2.15",
+    "mkdocstrings==0.18.1",
 ]
 # Define our package
 setup(
