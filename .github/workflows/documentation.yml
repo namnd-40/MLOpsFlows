@@ -1,4 +1,4 @@
-name: Build and deploy documentations
+name: build-and-deploy-documentations
 on:
   push:
     branches:
